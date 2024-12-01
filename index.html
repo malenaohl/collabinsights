@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recently Identified Opportunities</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lucide/0.263.1/lucide.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 20px;
+            color: #1a2b3c;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        h1 {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: #1a2b3c;
+        }
+        .opportunity-card {
+            background-color: white;
+            border-radius: 16px;
+            padding: 24px;
+            margin-bottom: 16px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+            border: 1px solid rgba(0, 0, 0, 0.08);
+            transition: all 0.2s ease-in-out;
+        }
+        .opportunity-card:hover {
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transform: translateY(-2px);
+            border-color: rgba(0, 0, 0, 0.12);
+        }
+        .opportunity-title {
+            font-size: 20px;
+            font-weight: 600;
+            color: #1a2b3c;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .sparkle-icon {
+            color: #b5397f;
+            display: inline-flex;
+        }
+        .opportunity-description {
+            font-size: 16px;
+            color: #5f6368;
+            margin-bottom: 24px;
+            line-height: 1.5;
+            font-weight: 400;
+        }
+        .recommendations {
+            margin: 24px -24px -24px -24px;
+            padding: 24px;
+            background-color: #fdf1f7;
+            border-bottom-left-radius: 16px;
+            border-bottom-right-radius: 16px;
+            cursor: pointer;
+        }
+        .recommendations-link {
+            color: #b5397f;
+            font-size: 16px;
+            font-weight: 500;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            pointer-events: none;
+        }
+        .recommendations-link:after {
+            content: "›";
+            margin-left: 8px;
+            font-size: 20px;
+            transition: transform 0.2s ease-in-out;
+            display: inline-block;
+        }
+        .recommendations:hover .recommendations-link:after {
+            transform: translateX(4px);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Recently identified opportunities</h1>
+        
+        <div class="opportunity-card">
+            <div class="opportunity-title">
+                <svg class="sparkle-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 3L14.5 8.5L20 11L14.5 13.5L12 19L9.5 13.5L4 11L9.5 8.5L12 3Z"/>
+                </svg>
+                Desk Placement Hinders Collaboration in Boston HQ
+            </div>
+            <div class="opportunity-description">In Boston HQ, Marketing and Product teams are seated on opposite sides of the office, despite collaborating on 50% of projects. This reduces ad hoc collaboration by 25% compared to other co-located teams.</div>
+            <div class="recommendations">
+                <a href="#" class="recommendations-link">3 recommendations</a>
+            </div>
+        </div>
+
+        <div class="opportunity-card">
+            <div class="opportunity-title">
+                <svg class="sparkle-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 3L14.5 8.5L20 11L14.5 13.5L12 19L9.5 13.5L4 11L9.5 8.5L12 3Z"/>
+                </svg>
+                Remote Sales Meetings Despite Office Presence
+            </div>
+            <div class="opportunity-description">The Chicago Sales team has 25% less planned collaboration despite high office attendance. About 80% of meetings are remote, even when members are on-site.</div>
+            <div class="recommendations">
+                <a href="#" class="recommendations-link">4 recommendations</a>
+            </div>
+        </div>
+
+        <div class="opportunity-card">
+            <div class="opportunity-title">
+                <svg class="sparkle-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 3L14.5 8.5L20 11L14.5 13.5L12 19L9.5 13.5L4 11L9.5 8.5L12 3Z"/>
+                </svg>
+                Limited Cross-Team Collaboration in Austin Office
+            </div>
+            <div class="opportunity-description">In the Austin office, 70% of employees interact solely with their own teams. Cross-department ad hoc collaboration is 30% lower than in comparable offices.</div>
+            <div class="recommendations">
+                <a href="#" class="recommendations-link">2 recommendations</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
